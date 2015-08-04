@@ -1,0 +1,27 @@
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Places ( <!--{{ count() }}--> )</h1>
+            <meteor-include src="loginButtons"></meteor-include>
+            
+            <label>
+                Search:
+                <input type="text" ng-model="$parent.filter" />
+            </label>
+            
+            <a ui-sref="placeEdit({id: 'new'})" class="btn btn-success pull-right" role="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Place</a>
+        </header>
+
+        <!--
+        <ul ng-repeat="place in places">
+            <button class="delete" ng-click="deletePlace(place)">&times;</button>
+
+            <span class="text"><strong>{{place.username}}</strong> - {{place.name}}</span>
+        </ul>
+        -->
+    </div>
+</body>

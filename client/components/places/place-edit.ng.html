@@ -1,0 +1,11 @@
+<div class="container">
+
+    <form ng-submit="addPlace(newPlace); newPlace='';" ng-show="$root.currentUser">
+        <div class="form-group">
+            <input ng-model="newPlace" type="text" name="name" placeholder="Restaurant name" />
+        </div>
+        
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Add Place</button>
+    </form>
+
+</div>
